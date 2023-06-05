@@ -1,0 +1,911 @@
+{
+    "extras": {},
+    "finished_at": "2023-05-18T20:01:33.873450",
+    "is_rotation_applied": true,
+    "pages": [
+        {
+            "extras": {
+                "cropper": {
+                    "cropping": [
+                        {
+                            "bounding_box": [
+                                [
+                                    0,
+                                    0.018
+                                ],
+                                [
+                                    1,
+                                    0.018
+                                ],
+                                [
+                                    1,
+                                    0.998
+                                ],
+                                [
+                                    0,
+                                    0.998
+                                ]
+                            ],
+                            "polygon": [
+                                [
+                                    0.066,
+                                    0.344
+                                ],
+                                [
+                                    0.08,
+                                    0.279
+                                ],
+                                [
+                                    0.121,
+                                    0.207
+                                ],
+                                [
+                                    0.203,
+                                    0.023
+                                ],
+                                [
+                                    0.357,
+                                    0.023
+                                ],
+                                [
+                                    0.492,
+                                    0.031
+                                ],
+                                [
+                                    0.775,
+                                    0.027
+                                ],
+                                [
+                                    0.844,
+                                    0.02
+                                ],
+                                [
+                                    0.852,
+                                    0.02
+                                ],
+                                [
+                                    0.867,
+                                    0.025
+                                ],
+                                [
+                                    0.932,
+                                    0.191
+                                ],
+                                [
+                                    0.941,
+                                    0.266
+                                ],
+                                [
+                                    0.939,
+                                    0.336
+                                ],
+                                [
+                                    0.914,
+                                    0.438
+                                ],
+                                [
+                                    0.936,
+                                    0.598
+                                ],
+                                [
+                                    0.967,
+                                    0.744
+                                ],
+                                [
+                                    0.996,
+                                    0.848
+                                ],
+                                [
+                                    0.994,
+                                    0.996
+                                ],
+                                [
+                                    0.117,
+                                    0.996
+                                ],
+                                [
+                                    0.006,
+                                    0.994
+                                ],
+                                [
+                                    0.004,
+                                    0.873
+                                ],
+                                [
+                                    0.027,
+                                    0.785
+                                ],
+                                [
+                                    0.07,
+                                    0.533
+                                ]
+                            ],
+                            "quadrangle": [
+                                [
+                                    0.116,
+                                    0.024
+                                ],
+                                [
+                                    0.912,
+                                    0.019
+                                ],
+                                [
+                                    1,
+                                    0.996
+                                ],
+                                [
+                                    0,
+                                    0.994
+                                ]
+                            ],
+                            "rectangle": [
+                                [
+                                    -0.004,
+                                    0.016
+                                ],
+                                [
+                                    1.006,
+                                    0.018
+                                ],
+                                [
+                                    1.004,
+                                    0.996
+                                ],
+                                [
+                                    -0.006,
+                                    0.994
+                                ]
+                            ]
+                        }
+                    ]
+                }
+            },
+            "id": 0,
+            "orientation": {
+                "value": 0
+            },
+            "prediction": {
+                "category": {
+                    "confidence": 1,
+                    "value": "food"
+                },
+                "date": {
+                    "confidence": 0.99,
+                    "polygon": [
+                        [
+                            0.246,
+                            0.182
+                        ],
+                        [
+                            0.406,
+                            0.182
+                        ],
+                        [
+                            0.406,
+                            0.2
+                        ],
+                        [
+                            0.246,
+                            0.2
+                        ]
+                    ],
+                    "value": "2023-04-21"
+                },
+                "document_type": {
+                    "confidence": 0.99,
+                    "value": "EXPENSE RECEIPT"
+                },
+                "line_items": [
+                    {
+                        "confidence": 0.97,
+                        "description": "X UNION 0,5",
+                        "polygon": [
+                            [
+                                0.135,
+                                0.267
+                            ],
+                            [
+                                0.838,
+                                0.281
+                            ],
+                            [
+                                0.837,
+                                0.338
+                            ],
+                            [
+                                0.134,
+                                0.324
+                            ]
+                        ],
+                        "quantity": 2,
+                        "total_amount": 5.6,
+                        "unit_price": 2.8
+                    },
+                    {
+                        "confidence": 0.96,
+                        "description": "NIKSICKO",
+                        "polygon": [
+                            [
+                                0.134,
+                                0.317
+                            ],
+                            [
+                                0.829,
+                                0.331
+                            ],
+                            [
+                                0.828,
+                                0.392
+                            ],
+                            [
+                                0.133,
+                                0.378
+                            ]
+                        ],
+                        "quantity": 1,
+                        "total_amount": 2.5,
+                        "unit_price": 2.5
+                    },
+                    {
+                        "confidence": 0.97,
+                        "description": "COCA COLA ST.",
+                        "polygon": [
+                            [
+                                0.13,
+                                0.372
+                            ],
+                            [
+                                0.82,
+                                0.386
+                            ],
+                            [
+                                0.819,
+                                0.444
+                            ],
+                            [
+                                0.129,
+                                0.431
+                            ]
+                        ],
+                        "quantity": 2,
+                        "total_amount": 5,
+                        "unit_price": 2.5
+                    },
+                    {
+                        "confidence": 0.97,
+                        "description": "CEVAPCICI 5 kom",
+                        "polygon": [
+                            [
+                                0.132,
+                                0.427
+                            ],
+                            [
+                                0.815,
+                                0.44
+                            ],
+                            [
+                                0.814,
+                                0.495
+                            ],
+                            [
+                                0.131,
+                                0.481
+                            ]
+                        ],
+                        "quantity": 4,
+                        "total_amount": 31.6,
+                        "unit_price": 7.9
+                    },
+                    {
+                        "confidence": 0.96,
+                        "description": "CIGANSKA PECENKA",
+                        "polygon": [
+                            [
+                                0.134,
+                                0.479
+                            ],
+                            [
+                                0.823,
+                                0.493
+                            ],
+                            [
+                                0.822,
+                                0.547
+                            ],
+                            [
+                                0.133,
+                                0.533
+                            ]
+                        ],
+                        "quantity": 1,
+                        "total_amount": 8.9,
+                        "unit_price": 8.9
+                    },
+                    {
+                        "confidence": 0.93,
+                        "description": "KAJMAK",
+                        "polygon": [
+                            [
+                                0.132,
+                                0.532
+                            ],
+                            [
+                                0.83,
+                                0.546
+                            ],
+                            [
+                                0.829,
+                                0.598
+                            ],
+                            [
+                                0.131,
+                                0.584
+                            ]
+                        ],
+                        "quantity": 2,
+                        "total_amount": 4,
+                        "unit_price": 2
+                    }
+                ],
+                "locale": {
+                    "confidence": 0.2,
+                    "country": "SI",
+                    "currency": "EUR",
+                    "language": "sl",
+                    "value": "sl-SI"
+                },
+                "orientation": {
+                    "confidence": 0.99,
+                    "degrees": 0
+                },
+                "subcategory": {
+                    "confidence": 0.66,
+                    "value": "shopping"
+                },
+                "supplier_address": {
+                    "confidence": 0.56,
+                    "polygon": [
+                        [
+                            0.15,
+                            0.126
+                        ],
+                        [
+                            0.54,
+                            0.126
+                        ],
+                        [
+                            0.54,
+                            0.169
+                        ],
+                        [
+                            0.15,
+                            0.169
+                        ]
+                    ],
+                    "value": "osojnikova urrsteajarova 3iica too pe 9 2250 ptuj"
+                },
+                "supplier_company_registrations": [],
+                "supplier_name": {
+                    "confidence": 0.97,
+                    "polygon": [
+                        [
+                            0.178,
+                            0.086
+                        ],
+                        [
+                            0.513,
+                            0.086
+                        ],
+                        [
+                            0.513,
+                            0.113
+                        ],
+                        [
+                            0.178,
+                            0.113
+                        ]
+                    ],
+                    "value": "BALKANSKA KUHINJA JUGO"
+                },
+                "supplier_phone_number": {
+                    "confidence": 0,
+                    "polygon": [],
+                    "value": null
+                },
+                "taxes": [
+                    {
+                        "base": 10.74,
+                        "code": null,
+                        "confidence": 0.99,
+                        "polygon": [
+                            [
+                                0.031,
+                                0.77
+                            ],
+                            [
+                                0.616,
+                                0.77
+                            ],
+                            [
+                                0.616,
+                                0.802
+                            ],
+                            [
+                                0.031,
+                                0.802
+                            ]
+                        ],
+                        "rate": 22,
+                        "value": 2.36
+                    }
+                ],
+                "time": {
+                    "confidence": 0.99,
+                    "polygon": [
+                        [
+                            0.42,
+                            0.181
+                        ],
+                        [
+                            0.558,
+                            0.181
+                        ],
+                        [
+                            0.558,
+                            0.199
+                        ],
+                        [
+                            0.42,
+                            0.199
+                        ]
+                    ],
+                    "value": "11:50"
+                },
+                "tip": {
+                    "confidence": 0,
+                    "polygon": [],
+                    "value": null
+                },
+                "total_amount": {
+                    "confidence": 0.99,
+                    "polygon": [
+                        [
+                            0.758,
+                            0.771
+                        ],
+                        [
+                            0.866,
+                            0.771
+                        ],
+                        [
+                            0.866,
+                            0.801
+                        ],
+                        [
+                            0.758,
+                            0.801
+                        ]
+                    ],
+                    "value": 13.1
+                },
+                "total_net": {
+                    "confidence": 0.99,
+                    "polygon": [
+                        [
+                            0.284,
+                            0.771
+                        ],
+                        [
+                            0.389,
+                            0.771
+                        ],
+                        [
+                            0.389,
+                            0.8
+                        ],
+                        [
+                            0.284,
+                            0.8
+                        ]
+                    ],
+                    "value": 10.74
+                },
+                "total_tax": {
+                    "confidence": 0.99,
+                    "polygon": [],
+                    "value": 2.36
+                }
+            }
+        }
+    ],
+    "prediction": {
+        "category": {
+            "confidence": 1,
+            "value": "food"
+        },
+        "date": {
+            "confidence": 0.99,
+            "page_id": 0,
+            "polygon": [
+                [
+                    0.246,
+                    0.182
+                ],
+                [
+                    0.406,
+                    0.182
+                ],
+                [
+                    0.406,
+                    0.2
+                ],
+                [
+                    0.246,
+                    0.2
+                ]
+            ],
+            "value": "2023-04-21"
+        },
+        "document_type": {
+            "confidence": 0.99,
+            "value": "EXPENSE RECEIPT"
+        },
+        "line_items": [
+            {
+                "confidence": 0.97,
+                "description": "X UNION 0,5",
+                "page_id": 0,
+                "polygon": [
+                    [
+                        0.135,
+                        0.267
+                    ],
+                    [
+                        0.838,
+                        0.281
+                    ],
+                    [
+                        0.837,
+                        0.338
+                    ],
+                    [
+                        0.134,
+                        0.324
+                    ]
+                ],
+                "quantity": 2,
+                "total_amount": 5.6,
+                "unit_price": 2.8
+            },
+            {
+                "confidence": 0.96,
+                "description": "NIKSICKO",
+                "page_id": 0,
+                "polygon": [
+                    [
+                        0.134,
+                        0.317
+                    ],
+                    [
+                        0.829,
+                        0.331
+                    ],
+                    [
+                        0.828,
+                        0.392
+                    ],
+                    [
+                        0.133,
+                        0.378
+                    ]
+                ],
+                "quantity": 1,
+                "total_amount": 2.5,
+                "unit_price": 2.5
+            },
+            {
+                "confidence": 0.97,
+                "description": "COCA COLA ST.",
+                "page_id": 0,
+                "polygon": [
+                    [
+                        0.13,
+                        0.372
+                    ],
+                    [
+                        0.82,
+                        0.386
+                    ],
+                    [
+                        0.819,
+                        0.444
+                    ],
+                    [
+                        0.129,
+                        0.431
+                    ]
+                ],
+                "quantity": 2,
+                "total_amount": 5,
+                "unit_price": 2.5
+            },
+            {
+                "confidence": 0.97,
+                "description": "CEVAPCICI 5 kom",
+                "page_id": 0,
+                "polygon": [
+                    [
+                        0.132,
+                        0.427
+                    ],
+                    [
+                        0.815,
+                        0.44
+                    ],
+                    [
+                        0.814,
+                        0.495
+                    ],
+                    [
+                        0.131,
+                        0.481
+                    ]
+                ],
+                "quantity": 4,
+                "total_amount": 31.6,
+                "unit_price": 7.9
+            },
+            {
+                "confidence": 0.96,
+                "description": "CIGANSKA PECENKA",
+                "page_id": 0,
+                "polygon": [
+                    [
+                        0.134,
+                        0.479
+                    ],
+                    [
+                        0.823,
+                        0.493
+                    ],
+                    [
+                        0.822,
+                        0.547
+                    ],
+                    [
+                        0.133,
+                        0.533
+                    ]
+                ],
+                "quantity": 1,
+                "total_amount": 8.9,
+                "unit_price": 8.9
+            },
+            {
+                "confidence": 0.93,
+                "description": "KAJMAK",
+                "page_id": 0,
+                "polygon": [
+                    [
+                        0.132,
+                        0.532
+                    ],
+                    [
+                        0.83,
+                        0.546
+                    ],
+                    [
+                        0.829,
+                        0.598
+                    ],
+                    [
+                        0.131,
+                        0.584
+                    ]
+                ],
+                "quantity": 2,
+                "total_amount": 4,
+                "unit_price": 2
+            }
+        ],
+        "locale": {
+            "confidence": 0.2,
+            "country": "SI",
+            "currency": "EUR",
+            "language": "sl",
+            "value": "sl-SI"
+        },
+        "subcategory": {
+            "confidence": 0.66,
+            "value": "shopping"
+        },
+        "supplier_address": {
+            "confidence": 0.56,
+            "page_id": 0,
+            "polygon": [
+                [
+                    0.15,
+                    0.126
+                ],
+                [
+                    0.54,
+                    0.126
+                ],
+                [
+                    0.54,
+                    0.169
+                ],
+                [
+                    0.15,
+                    0.169
+                ]
+            ],
+            "value": "osojnikova urrsteajarova 3iica too pe 9 2250 ptuj"
+        },
+        "supplier_company_registrations": [],
+        "supplier_name": {
+            "confidence": 0.97,
+            "page_id": 0,
+            "polygon": [
+                [
+                    0.178,
+                    0.086
+                ],
+                [
+                    0.513,
+                    0.086
+                ],
+                [
+                    0.513,
+                    0.113
+                ],
+                [
+                    0.178,
+                    0.113
+                ]
+            ],
+            "value": "BALKANSKA KUHINJA JUGO"
+        },
+        "supplier_phone_number": {
+            "confidence": 0,
+            "page_id": null,
+            "polygon": [],
+            "value": null
+        },
+        "taxes": [
+            {
+                "base": 10.74,
+                "code": null,
+                "confidence": 0.99,
+                "page_id": 0,
+                "polygon": [
+                    [
+                        0.031,
+                        0.77
+                    ],
+                    [
+                        0.616,
+                        0.77
+                    ],
+                    [
+                        0.616,
+                        0.802
+                    ],
+                    [
+                        0.031,
+                        0.802
+                    ]
+                ],
+                "rate": 22,
+                "value": 2.36
+            }
+        ],
+        "time": {
+            "confidence": 0.99,
+            "page_id": 0,
+            "polygon": [
+                [
+                    0.42,
+                    0.181
+                ],
+                [
+                    0.558,
+                    0.181
+                ],
+                [
+                    0.558,
+                    0.199
+                ],
+                [
+                    0.42,
+                    0.199
+                ]
+            ],
+            "value": "11:50"
+        },
+        "tip": {
+            "confidence": 0,
+            "page_id": null,
+            "polygon": [],
+            "value": null
+        },
+        "total_amount": {
+            "confidence": 0.99,
+            "page_id": 0,
+            "polygon": [
+                [
+                    0.758,
+                    0.771
+                ],
+                [
+                    0.866,
+                    0.771
+                ],
+                [
+                    0.866,
+                    0.801
+                ],
+                [
+                    0.758,
+                    0.801
+                ]
+            ],
+            "value": 13.1
+        },
+        "total_net": {
+            "confidence": 0.99,
+            "page_id": 0,
+            "polygon": [
+                [
+                    0.284,
+                    0.771
+                ],
+                [
+                    0.389,
+                    0.771
+                ],
+                [
+                    0.389,
+                    0.8
+                ],
+                [
+                    0.284,
+                    0.8
+                ]
+            ],
+            "value": 10.74
+        },
+        "total_tax": {
+            "confidence": 0.99,
+            "page_id": 0,
+            "polygon": [],
+            "value": 2.36
+        }
+    },
+    "processing_time": 1.272,
+    "product": {
+        "features": [
+            "locale",
+            "category",
+            "subcategory",
+            "document_type",
+            "date",
+            "time",
+            "total_amount",
+            "total_net",
+            "total_tax",
+            "tip",
+            "taxes",
+            "supplier_name",
+            "supplier_company_registrations",
+            "supplier_address",
+            "supplier_phone_number",
+            "orientation",
+            "line_items"
+        ],
+        "name": "mindee/expense_receipts",
+        "type": "standard",
+        "version": "5.0"
+    },
+    "started_at": "2023-05-18T20:01:32.601290"
+}

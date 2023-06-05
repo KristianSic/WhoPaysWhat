@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Hypermarket';
+  src: local('Hypermarket Bold'), local('Hypermarket-Bold'),
+    url('Hypermarket-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hypermarket';
+  src: local('Hypermarket'), local('Hypermarket-Regular'),
+    url('Hypermarket-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hypermarket';
+  src: local('Hypermarket Light'), local('Hypermarket-Light'),
+    url('Hypermarket-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}

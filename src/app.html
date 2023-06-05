@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+    <link
+      rel="preload"
+      href="fonts/stylesheet.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <meta name="viewport" content="width=device-width" />
+    %sveltekit.head%
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">%sveltekit.body%</div>
+  </body>
+</html>
+
+<style global>
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+  html {
+    scrollbar-gutter: stable;
+    background: #e9e4e4;
+  }
+
+  body,
+  input {
+    font-family: 'Hypermarket';
+    letter-spacing: 1px;
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+
+  img,
+  svg,
+  video {
+    max-width: 100%;
+    display: block;
+  }
+
+  * {
+    color: #373f51;
+  }
+
+  dialog {
+    border-radius: 5px;
+  }
+
+  button {
+    border: 1px solid #373f51;
+    background: white;
+    border-radius: 2px;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+  }
+
+  button:hover {
+    box-shadow: white 0px 0px 0px 1px, black 0px 0px 0px 3px !important;
+    background: var(--btn);
+  }
+
+  button:hover > * {
+    scale: 1.1;
+  }
+
+  textarea:focus,
+  input:focus,
+  input[type]:focus {
+    outline-color: inherit;
+  }
+
+  hr {
+    height: 1px;
+    border: none;
+    margin: 10px 0px;
+    border: 1px dashed;
+  }
+
+  input {
+    background: transparent;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+
+  .btn--round {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+
+  .btn--big {
+    height: 39px;
+    aspect-ratio: 1;
+    font-size: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .drag-over {
+    outline: 3px solid #373f51;
+  }
+</style>
