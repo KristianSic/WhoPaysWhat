@@ -3,8 +3,9 @@
 	import yugo from '../yugo.json';
 	import Modal from './modal.svelte';
 	import Icon from './icon.svelte';
+	import { base } from '$app/paths';
+	
 	let enterTarget: HTMLElement | any = null;
-
 	let receiptItemModal: Modal;
 	let receiptItemParticipantModal: Modal;
 
@@ -386,7 +387,7 @@
 		</div>
 		<div class="header__right">
 			<div class="receipt-image">
-				<img alt="receipt" src="./test-receipt.jpeg" />
+				<img alt="receipt" src="{base}/test-receipt.jpeg" />
 			</div>
 		</div>
 	</div>
