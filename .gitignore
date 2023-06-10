@@ -61,13 +61,13 @@ yarn-error.log*
 # Dependency directories
 node_modules/
 jspm_packages/
+build
 
 # Optional npm cache directory
 .npm
-
+.svelte-kit
 # Optional eslint cache
 .eslintcache
-
 # Optional REPL history
 .node_repl_history
 
