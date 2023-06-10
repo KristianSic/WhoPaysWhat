@@ -1,3 +1,5 @@
+[Check it out !](https://kristiansic.github.io/WhoPaysWhat)
+
 # What is it ?
 
 This is a simple app I created for learning svelte.
