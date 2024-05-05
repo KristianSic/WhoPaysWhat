@@ -10,6 +10,7 @@
 	let receiptItemParticipantModal: Modal;
 
 	let receipt = yugo;
+	let imageSrc = `${base}/test-receipt.jpeg`
 
 	const rating = ['🤨', '🙅‍♂️', '😒', '🤔', '😐', '🙂', '😄', '😁', '🤩', '🙌', '🎉'];
 
@@ -275,6 +276,18 @@
 		receiptItemParticipantModal.closeModal();
 	}
 
+	function openFilePicker() {
+    const fileInput = document.createElement('input');
+    fileInput.type = 'file';
+    fileInput.accept = 'image/*';
+    fileInput.style.display = 'none';
+    fileInput.addEventListener('change', (event:any) => {
+			const file = event.target.files[0];
+			imageSrc = URL.createObjectURL(file);
+		});
+    fileInput.click();
+	}
+
 	fetchData();
 </script>
 
@@ -387,7 +400,20 @@
 		</div>
 		<div class="header__right">
 			<div class="receipt-image">
-				<img alt="receipt" src="{base}/test-receipt.jpeg" />
+				<div class="tilting-card-content" on:click={openFilePicker}>
+					<img class="img" alt="receipt" src="{imageSrc}" />
+					<div class="mouse-position-tracker">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -462,11 +488,8 @@
 			align-items: center;
 			justify-content: center;
 			border-radius: 5px;
-			> img {
-				margin: 5px;
+			img {
 				border-radius: 5px;
-				box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-					rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 			}
 		}
 	}
@@ -625,4 +648,105 @@
 			padding: 3px 5px;
 		}
 	}
+
+
+.tilting-card-content {
+  --perspective: 500px;
+  --rotateX: 0;
+  --rotateY: 0;
+  --angle: 5deg;
+
+	cursor: pointer;
+  position: relative;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transform: perspective(var(--perspective)) rotateX(var(--rotateX))
+    rotateY(var(--rotateY));
+  transition: transform 300ms ease-out;
+}
+
+.tilting-card-content > :where(h1, p) {
+  background: white;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.mouse-position-tracker {
+  position: absolute;
+  inset: 0;
+}
+
+.mouse-position-tracker > div {
+  position: absolute;
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  z-index: 2;
+}
+
+.tilting-card-content:has(.mouse-position-tracker > div:nth-child(1):hover) {
+  --rotateX: var(--angle);
+  --rotateY: calc(var(--angle) * -1);
+}
+
+.tilting-card-content:has(.mouse-position-tracker > div:nth-child(2):hover) {
+  --rotateX: var(--angle);
+}
+
+.tilting-card-content:has(.mouse-position-tracker > div:nth-child(3):hover) {
+  --rotateX: var(--angle);
+  --rotateY: var(--angle);
+}
+
+.tilting-card-content:has(.mouse-position-tracker > div:nth-child(4):hover) {
+  --rotateY: calc(var(--angle) * -1);
+}
+
+.tilting-card-content:has(.mouse-position-tracker > div:nth-child(6):hover) {
+  --rotateY: var(--angle);
+}
+
+.tilting-card-content:has(.mouse-position-tracker > div:nth-child(7):hover) {
+  --rotateX: calc(var(--angle) * -1);
+  --rotateY: calc(var(--angle) * -1);
+}
+
+.tilting-card-content:has(.mouse-position-tracker > div:nth-child(8):hover) {
+  --rotateX: calc(var(--angle) * -1);
+}
+
+.tilting-card-content:has(.mouse-position-tracker > div:nth-child(9):hover) {
+  --rotateX: calc(var(--angle) * -1);
+  --rotateY: var(--angle);
+}
+
+/* 1st, 4th, 7th */
+.mouse-position-tracker > div:nth-of-type(3n - 2) {
+  left: 0;
+}
+/* 2nd, 5th, 8th */
+.mouse-position-tracker > div:nth-of-type(3n - 1) {
+  left: calc(100% / 3);
+}
+/* 3rd, 6th, 9th */
+.mouse-position-tracker > div:nth-of-type(3n) {
+  right: 0;
+}
+
+/* 1-3 */
+.mouse-position-tracker > div:nth-child(n + 1):nth-child(-n + 3) {
+  top: 0;
+}
+
+/* 4-6 */
+.mouse-position-tracker > div:nth-child(n + 4):nth-child(-n + 6) {
+  top: calc(100% / 3);
+}
+
+/* 7-9 */
+.mouse-position-tracker > div:nth-child(n + 7):nth-child(-n + 9) {
+  bottom: 0;
+}
+
 </style>
